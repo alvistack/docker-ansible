@@ -1,6 +1,6 @@
 # Docker Image Packaging for Ansible
 
-## 2.10.1-XalvistackY - TBC
+## 2.10.2-XalvistackY - TBC
 
 ### Major Changes
 
