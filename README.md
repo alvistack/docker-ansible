@@ -9,9 +9,9 @@ Ansible is an open source community project sponsored by Red Hat, it's the simpl
 
 Learn more about Ansible: <https://www.ansible.com/>
 
-## Supported Tags and Respective `Dockerfile` Links
+## Supported Tags and Respective Packer Template Links
 
-  - [`2.10`, `latest`](https://github.com/alvistack/docker-ansibleg/blob/master/molecule/2.10/Dockerfile.j2)
+  - [`2.10`, `latest`](https://github.com/alvistack/docker-ansibleg/blob/master/packer/2.10/packer.json)
 
 ## Overview
 
@@ -19,8 +19,7 @@ This Docker container makes it easy to get an instance of Ansible up and running
 
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Minimized `Dockerfile` for meta data definition
-  - Provision by Ansible and Molecule Docker driver in single layer
+  - Packaging by Packer Docker builder and Ansible provisioner in single layer
   - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
