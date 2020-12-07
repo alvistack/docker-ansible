@@ -11,7 +11,7 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`2.10`, `latest`](https://github.com/alvistack/docker-ansibleg/blob/master/packer/2.10/packer.json)
+  - [`2.10`, `latest`](https://github.com/alvistack/docker-ansibleg/blob/master/packer/docker-2.10/packer.json)
 
 ## Overview
 
