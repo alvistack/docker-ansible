@@ -69,7 +69,7 @@
     sudo docker tag $_ORG/$_IMAGE:latest $_ORG/$_IMAGE:$_TAG
     sudo docker push $_ORG/$_IMAGE:$_TAG
 
-.job-packer: &job-packer
+.job-packer-build: &job-packer-build
   script:
     - *script-bootstrap-packer
     - *script-bootstrap-docker
@@ -97,7 +97,7 @@ default:
     - *script-git-submodule
 
 build:docker-2.10:
-  <<: *job-packer
+  <<: *job-packer-build
   stage: build
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
