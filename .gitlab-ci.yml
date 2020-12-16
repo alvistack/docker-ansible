@@ -86,7 +86,7 @@
 cache:
   key: "$CI_PIPELINE_ID"
   paths:
-    - output-docker/*.tar.gz
+    - packer/*/output-docker/*.tar.gz
 
 default:
   before_script:
