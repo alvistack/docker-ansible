@@ -99,7 +99,7 @@ build:docker-2.10:
 
 test:docker-2.10:
   <<: *job-docker-run
-  state: test
+  stage: test
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
     _PACKER_BUILDER_VERSION: "2.10"
@@ -108,7 +108,7 @@ test:docker-2.10:
 
 deploy:docker-2.10:
   <<: *job-docker-push
-  state: deploy
+  stage: deploy
   variables:
     _PACKER_BUILDER_PROVIDER: "docker"
     _PACKER_BUILDER_VERSION: "2.10"
