@@ -37,6 +37,7 @@
     cd packer/$_PACKER_BUILDER_PROVIDER-$_PACKER_BUILDER_VERSION
     sudo packer build packer.json
     export _ID=$(sudo docker images | awk '{print $3}' | awk 'NR==2')
+    mkdir -p output-docker
     sudo docker save $_ID | gzip -9 > output-docker/$_PACKER_BUILDER_PROVIDER-$_PACKER_BUILDER_VERSION.tar.gz
 
 .script-docker-run: &script-docker-run
