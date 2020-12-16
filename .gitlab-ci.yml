@@ -47,6 +47,7 @@
     sudo docker run -itd $_ID
 
 .script-docker-push: &script-docker-push
+  - |
     cd packer/$_PACKER_BUILDER_PROVIDER-$_PACKER_BUILDER_VERSION
     export _ORG=$CI_PROJECT_NAMESPACE
     export _IMAGE=$(echo $CI_PROJECT_NAME | sed 's/^docker-//g')-$_PACKER_BUILDER_VERSION
