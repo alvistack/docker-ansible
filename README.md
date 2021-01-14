@@ -11,7 +11,8 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/ansible-2.10`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-2.10/packer.json)
+  - [`alvistack/ansible-2.10`](https://hub.docker.com/r/alvistack/ansible-2.10)
+      - [`packer/docker-2.10/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-2.10/packer.json)
 
 ## Overview
 
