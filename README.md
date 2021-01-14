@@ -3,7 +3,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-2.10.svg)](https://hub.docker.com/r/alvistack/ansible-2.10/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-2.10.svg)](https://hub.docker.com/r/alvistack/ansible-2.10)
 
 Ansible is an open source community project sponsored by Red Hat, it's the simplest way to automate IT.
 
