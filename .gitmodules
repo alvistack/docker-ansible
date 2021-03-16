@@ -1,3 +1,7 @@
+[submodule "roles/ansible"]
+	path = roles/ansible
+	url = https://github.com/alvistack/ansible-role-ansible.git
+	branch = develop
 [submodule "roles/catatonit"]
 	path = roles/catatonit
 	url = https://github.com/alvistack/ansible-role-catatonit.git
@@ -10,6 +14,10 @@
 	path = roles/locales
 	url = https://github.com/alvistack/ansible-role-locales.git
 	branch = develop
+[submodule "roles/molecule"]
+	path = roles/molecule
+	url = https://github.com/alvistack/ansible-role-molecule.git
+	branch = develop
 [submodule "roles/python"]
 	path = roles/python
 	url = https://github.com/alvistack/ansible-role-python.git
@@ -17,8 +25,4 @@
 [submodule "roles/timezone"]
 	path = roles/timezone
 	url = https://github.com/alvistack/ansible-role-timezone.git
-	branch = develop
-[submodule "roles/ansible"]
-	path = roles/ansible
-	url = https://github.com/alvistack/ansible-role-ansible.git
 	branch = develop
