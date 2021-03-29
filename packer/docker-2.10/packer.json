@@ -23,13 +23,6 @@
       "type": "shell-local"
     },
     {
-      "repository": "output-docker/image",
-      "tags": [
-        "latest"
-      ],
-      "type": "docker-tag"
-    },
-    {
       "path": "output-docker/image.tar.gz",
       "type": "docker-save"
     }
