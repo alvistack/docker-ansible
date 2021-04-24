@@ -30,14 +30,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Ansible:
 
     # Pull latest image
-    docker pull alvistack/ansible
+    docker pull alvistack/ansible-2.10
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name ansible \
-        alvistack/ansible \
+        alvistack/ansible-2.10 \
         ansible --version
 
 ## Versioning
