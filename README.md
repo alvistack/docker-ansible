@@ -3,21 +3,18 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-4.0.svg)](https://hub.docker.com/r/alvistack/ansible-4.0)
-
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-4.1.svg)](https://hub.docker.com/r/alvistack/ansible-4.1)
 Ansible is an open source community project sponsored by Red Hat, it's the simplest way to automate IT.
-
 Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/ansible-4.0`](https://hub.docker.com/r/alvistack/ansible-4.0)
-      - [`packer/docker-4.0/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.0/packer.json)
+  - [`alvistack/ansible-4.1`](https://hub.docker.com/r/alvistack/ansible-4.1)
+      - [`packer/docker-4.1/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.1/packer.json)
 
 ## Overview
 
 This Docker container makes it easy to get an instance of Ansible up and running.
-
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
   - Packaging by Packer Docker builder and Ansible provisioner in single layer
@@ -26,19 +23,16 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 ### Quick Start
 
 For the `VOLUME` directory that is used to store the repository data (amongst other things) we recommend mounting a host directory as a [data volume](https://docs.docker.com/engine/tutorials/dockervolumes/#/data-volumes), or via a named volume if using a docker version \>= 1.9.
-
 Start Ansible:
-
-    # Pull latest image
-    docker pull alvistack/ansible-4.0
-    
-    # Run as detach
-    docker run \
-        -itd \
-        --rm \
-        --name ansible \
-        alvistack/ansible-4.0 \
-        ansible --version
+\# Pull latest image
+docker pull alvistack/ansible-4.1
+\# Run as detach
+docker run   
+\-itd   
+\--rm   
+\--name ansible   
+alvistack/ansible-4.1   
+ansible --version
 
 ## Versioning
 
