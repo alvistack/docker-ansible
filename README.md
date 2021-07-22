@@ -7,7 +7,7 @@ release](https://img.shields.io/github/release/alvistack/docker-ansible.svg)](ht
 [![GitHub
 license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
 [![Docker
-Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-4.2.svg)](https://hub.docker.com/r/alvistack/ansible-4.2)
+Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-4.3.svg)](https://hub.docker.com/r/alvistack/ansible-4.3)
 
 Ansible is an open source community project sponsored by Red Hat, it's
 the simplest way to automate IT.
@@ -16,8 +16,8 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`alvistack/ansible-4.2`](https://hub.docker.com/r/alvistack/ansible-4.2)
-      - [`packer/docker-4.2/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.2/packer.json)
+  - [`alvistack/ansible-4.3`](https://hub.docker.com/r/alvistack/ansible-4.3)
+      - [`packer/docker-4.3/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.3/packer.json)
 
 ## Overview
 
@@ -42,14 +42,14 @@ or via a named volume if using a docker version \>= 1.9.
 Start Ansible:
 
     # Pull latest image
-    docker pull alvistack/ansible-4.2
+    docker pull alvistack/ansible-4.3
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name ansible \
-        alvistack/ansible-4.2 \
+        alvistack/ansible-4.3 \
         ansible --version
 
 ## Versioning
@@ -71,8 +71,8 @@ latest packages provided by the base image project.
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC
-    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC BY
+    4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
