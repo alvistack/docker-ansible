@@ -1,5 +1,7 @@
 # Docker Image Packaging for Ansible
 
+<img src="/alvistack.svg" width="75" alt="AlviStack">
+
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
