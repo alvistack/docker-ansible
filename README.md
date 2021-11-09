@@ -15,6 +15,8 @@ Learn more about Ansible: <https://www.ansible.com/>
 
   - [`alvistack/ansible-4.8`](https://hub.docker.com/r/alvistack/ansible-4.8)
       - [`packer/docker-4.8/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.8/packer.json)
+  - [`alvistack/ansible-4.7`](https://hub.docker.com/r/alvistack/ansible-4.7)
+      - [`packer/docker-4.7/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.7/packer.json)
 
 ## Overview
 
