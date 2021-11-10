@@ -13,6 +13,8 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/ansible-5.0`](https://hub.docker.com/r/alvistack/ansible-5.0)
+      - [`packer/docker-5.0/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.0/packer.json)
   - [`alvistack/ansible-4.8`](https://hub.docker.com/r/alvistack/ansible-4.8)
       - [`packer/docker-4.8/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.8/packer.json)
   - [`alvistack/ansible-4.7`](https://hub.docker.com/r/alvistack/ansible-4.7)
