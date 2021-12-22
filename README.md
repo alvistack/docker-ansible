@@ -5,7 +5,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-4.9.svg)](https://hub.docker.com/r/alvistack/ansible-4.9)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-5.1.svg)](https://hub.docker.com/r/alvistack/ansible-5.1)
 
 Ansible is an open source community project sponsored by Red Hat, it's the simplest way to automate IT.
 
@@ -13,12 +13,14 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/ansible-5.1`](https://hub.docker.com/r/alvistack/ansible-5.1)
+      - [`packer/docker-5.1/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.1/packer.json)
   - [`alvistack/ansible-5.0`](https://hub.docker.com/r/alvistack/ansible-5.0)
       - [`packer/docker-5.0/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.0/packer.json)
+  - [`alvistack/ansible-4.10`](https://hub.docker.com/r/alvistack/ansible-4.10)
+      - [`packer/docker-4.10/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.10/packer.json)
   - [`alvistack/ansible-4.9`](https://hub.docker.com/r/alvistack/ansible-4.9)
       - [`packer/docker-4.9/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.9/packer.json)
-  - [`alvistack/ansible-4.8`](https://hub.docker.com/r/alvistack/ansible-4.8)
-      - [`packer/docker-4.8/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.8/packer.json)
 
 ## Overview
 
@@ -36,14 +38,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Ansible:
 
     # Pull latest image
-    docker pull alvistack/ansible-4.9
+    docker pull alvistack/ansible-5.1
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name ansible \
-        alvistack/ansible-4.9 \
+        alvistack/ansible-5.1 \
         ansible --version
 
 ## Versioning
