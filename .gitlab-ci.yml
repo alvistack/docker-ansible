@@ -129,6 +129,31 @@ deploy:docker-6.0:
   needs:
     - build:docker-6.0
 
+build:docker-5.9:
+  <<: *job-packer-build
+  stage: build
+  cache:
+    key: "$CI_PIPELINE_ID-docker-5.9"
+    paths:
+      - packer/*/output-docker
+  variables:
+    _PACKER_BUILDER_PROVIDER: "docker"
+    _PACKER_BUILDER_VERSION: "5.9"
+
+deploy:docker-5.9:
+  <<: *job-docker-push
+  stage: deploy
+  cache:
+    key: "$CI_PIPELINE_ID-docker-5.9"
+    paths:
+      - packer/*/output-docker
+    policy: pull
+  variables:
+    _PACKER_BUILDER_PROVIDER: "docker"
+    _PACKER_BUILDER_VERSION: "5.9"
+  needs:
+    - build:docker-5.9
+
 build:docker-5.8:
   <<: *job-packer-build
   stage: build
@@ -153,31 +178,6 @@ deploy:docker-5.8:
     _PACKER_BUILDER_VERSION: "5.8"
   needs:
     - build:docker-5.8
-
-build:docker-5.7:
-  <<: *job-packer-build
-  stage: build
-  cache:
-    key: "$CI_PIPELINE_ID-docker-5.7"
-    paths:
-      - packer/*/output-docker
-  variables:
-    _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "5.7"
-
-deploy:docker-5.7:
-  <<: *job-docker-push
-  stage: deploy
-  cache:
-    key: "$CI_PIPELINE_ID-docker-5.7"
-    paths:
-      - packer/*/output-docker
-    policy: pull
-  variables:
-    _PACKER_BUILDER_PROVIDER: "docker"
-    _PACKER_BUILDER_VERSION: "5.7"
-  needs:
-    - build:docker-5.7
 
 build:docker-4.10:
   <<: *job-packer-build
