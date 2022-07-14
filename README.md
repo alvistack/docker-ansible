@@ -5,7 +5,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-5.9.svg)](https://hub.docker.com/r/alvistack/ansible-5.9)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-6.1.svg)](https://hub.docker.com/r/alvistack/ansible-6.1)
 
 Ansible is an open source community project sponsored by Red Hat, it's the simplest way to automate IT.
 
@@ -13,6 +13,8 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/ansible-6.1`](https://hub.docker.com/r/alvistack/ansible-6.1)
+      - [`packer/docker-6.1/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-6.1/packer.json)
   - [`alvistack/ansible-6.0`](https://hub.docker.com/r/alvistack/ansible-6.0)
       - [`packer/docker-6.0/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-6.0/packer.json)
   - [`alvistack/ansible-5.9`](https://hub.docker.com/r/alvistack/ansible-5.9)
@@ -40,14 +42,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Ansible:
 
     # Pull latest image
-    docker pull alvistack/ansible-5.9
+    docker pull alvistack/ansible-6.1
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name ansible \
-        alvistack/ansible-5.9 \
+        alvistack/ansible-6.1 \
         ansible --version
 
 ## Versioning
