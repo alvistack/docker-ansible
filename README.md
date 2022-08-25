@@ -5,7 +5,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-ansible/master)](https://gitlab.com/alvistack/docker-ansible/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-ansible.svg)](https://github.com/alvistack/docker-ansible/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-6.2.svg)](https://hub.docker.com/r/alvistack/ansible-6.2)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/ansible-6.3.svg)](https://hub.docker.com/r/alvistack/ansible-6.3)
 
 Ansible is an open source community project sponsored by Red Hat, it's the simplest way to automate IT.
 
@@ -13,14 +13,14 @@ Learn more about Ansible: <https://www.ansible.com/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/ansible-6.3`](https://hub.docker.com/r/alvistack/ansible-6.3)
+      - [`packer/docker-6.3/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-6.3/packer.json)
   - [`alvistack/ansible-6.2`](https://hub.docker.com/r/alvistack/ansible-6.2)
       - [`packer/docker-6.2/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-6.2/packer.json)
-  - [`alvistack/ansible-6.1`](https://hub.docker.com/r/alvistack/ansible-6.1)
-      - [`packer/docker-6.1/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-6.1/packer.json)
+  - [`alvistack/ansible-5.10`](https://hub.docker.com/r/alvistack/ansible-5.10)
+      - [`packer/docker-5.10/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.10/packer.json)
   - [`alvistack/ansible-5.9`](https://hub.docker.com/r/alvistack/ansible-5.9)
       - [`packer/docker-5.9/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.9/packer.json)
-  - [`alvistack/ansible-5.8`](https://hub.docker.com/r/alvistack/ansible-5.8)
-      - [`packer/docker-5.8/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-5.8/packer.json)
   - [`alvistack/ansible-4.10`](https://hub.docker.com/r/alvistack/ansible-4.10)
       - [`packer/docker-4.10/packer.json`](https://github.com/alvistack/docker-ansible/blob/master/packer/docker-4.10/packer.json)
   - [`alvistack/ansible-4.9`](https://hub.docker.com/r/alvistack/ansible-4.9)
@@ -42,14 +42,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Ansible:
 
     # Pull latest image
-    docker pull alvistack/ansible-6.2
+    docker pull alvistack/ansible-6.3
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name ansible \
-        alvistack/ansible-6.2 \
+        alvistack/ansible-6.3 \
         ansible --version
 
 ## Versioning
